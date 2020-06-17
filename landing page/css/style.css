@@ -79,6 +79,7 @@ main{
 .intro{
   background-color: #ffffff;
   padding: 15vh 0;
+  display: block;
 }
 
 .intro-content{
@@ -89,6 +90,7 @@ main{
 
 .intro-content div{
   width: 50%;
+  display: block;
 }
 
 .intro-text p{
@@ -156,6 +158,21 @@ footer{
   padding-top: 15vh;
   padding-bottom: 30px;
 }
+.left {
+  padding:20px;
+  float:left;
+  width:35%; /* The width is 20%, by default */
+}
+.main {
+  padding:20px;
+  float:left;
+  width:30%; /* The width is 20%, by default */
+}
+.right {
+  padding:20px;
+  float:left;
+  width:35%; /* The width is 20%, by default */
+}
 
 @media screen and (max-width: 768px){
   .header-content h2{
@@ -163,12 +180,13 @@ footer{
   }
 
   .intro-content{
-    display: block;
-    height: 90vh;
+    height: 100vh;
   }
 
   .intro-content div{
     width: 100%;
+    float:none;
+    margin-top:20px;
   }
 
   .services{
@@ -181,9 +199,11 @@ footer{
     margin-top: -15vh;
     padding-top: 1px;
   }
-
   .bucket{
     width: 100%;
     margin: 80px 3%;
+  }
+  .left, .main, .right{
+    width:100%;
   }
 }
