@@ -78,8 +78,7 @@ main{
 
 .intro{
   background-color: #ffffff;
-  padding: 15vh 0;
-  display: block;
+  padding: 5vh 0 5vh 0;
 }
 
 .intro-content{
@@ -90,13 +89,12 @@ main{
 
 .intro-content div{
   width: 50%;
-  display: block;
 }
 
 .intro-text p{
   text-align: justify;
   color: #828282;
-  line-height: 40px;
+  line-height: 30px;
 }
 
 .services{
@@ -113,7 +111,7 @@ main{
 
 .bucket{
   width: 25%;
-  margin: 130px 3%;
+  margin: 90px 3%;
   color: #ffffff;
 }
 
@@ -158,35 +156,20 @@ footer{
   padding-top: 15vh;
   padding-bottom: 30px;
 }
-.left {
-  padding:20px;
-  float:left;
-  width:35%; /* The width is 20%, by default */
-}
-.main {
-  padding:20px;
-  float:left;
-  width:30%; /* The width is 20%, by default */
-}
-.right {
-  padding:20px;
-  float:left;
-  width:35%; /* The width is 20%, by default */
-}
 
 @media screen and (max-width: 768px){
   .header-content h2{
     font-size: 20px;
+    line-height:0.1;
   }
 
   .intro-content{
-    height: 100vh;
+    display: block;
+    height: 90vh;
   }
 
   .intro-content div{
     width: 100%;
-    float:none;
-    margin-top:20px;
   }
 
   .services{
@@ -199,11 +182,17 @@ footer{
     margin-top: -15vh;
     padding-top: 1px;
   }
+
   .bucket{
     width: 100%;
-    margin: 80px 3%;
+    margin: 20px 3%;
   }
-  .left, .main, .right{
-    width:100%;
+  .m-f{
+    font-size:15px;
+    line-height: 0.8;
+  }
+  .intro-text p{
+    line-height:25px;
+  }
   }
 }
